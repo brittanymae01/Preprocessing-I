@@ -132,6 +132,7 @@ table {
 }
 html,
 body {
+  font-family: 'Be Vietnam', sans-serif;
   font-size: 62.5%;
   height: 100%;
 }
@@ -156,7 +157,7 @@ header nav a {
   color: black;
 }
 .name {
-  font-size: 7rem;
+  font-size: 6rem;
 }
 h1 {
   font-size: 4rem;
@@ -166,6 +167,7 @@ h1 {
 p {
   line-height: 200%;
   font-size: 2rem;
+  padding-top: 2%;
 }
 .top-section {
   background-color: pink;
@@ -186,7 +188,7 @@ h2 {
 button {
   margin: 2% 0;
   font-size: 3rem;
-  background-color: purple;
+  background-color: palevioletred;
   padding: 1% 2%;
   border-radius: 8px;
   color: white;
@@ -215,7 +217,7 @@ ul li {
   margin-top: 5%;
 }
 footer {
-  background-color: grey;
+  background-color: pink;
   width: 60%;
   padding: 2%;
 }

@@ -50,10 +50,94 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
-}
+	box-sizing: border-box;
+	}
 
 html, body {
-    height: 100%;
+	font-size: 62.5%;
+	height: 100%;
 }
 
+.container {
+	margin: 0 auto;
+	padding: 4%
+  }
+
+header {
+	border: 1px solid red;
+	display: flex;
+	justify-content: space-between;
+	padding: 2%;
+
+	nav {
+		border: 1px solid red;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 50%;
+
+		a {
+			font-size: 1.8rem;
+			text-decoration: none;
+		}//this closes my links
+	}//this closes my nav
+}//this closes my header
+
+h1 {
+	font-size: 4rem;
+}
+
+p {
+	font-size: 2rem;
+}
+
+.top-section {
+	background-color: pink;
+	padding: 2%;
+	img {
+width: 40%
+	}//this closes my image
+}//this closes my top-section
+
+h2 {
+	font-size: 3rem;
+}
+
+.introduction {
+	padding: 2%
+}//this closes introduction
+
+.contact-info {
+	padding: 2%
+}//this closes the contact-info 
+
+button {
+	margin: 2% 0;
+	font-size: 3rem;
+	background-color: purple;
+	padding: 1% 2%;
+	border-radius: 8px;
+	color: white;
+}
+
+.more-about-me {
+	display: flex;
+
+	.left-about-me {
+		width: 45%;
+
+		.right-about-me {
+			width: 45%;
+		}//this closes right-about-me
+	}//this closes left-about-me
+}//this closes more-about-me
+
+footer {
+	background-color: grey;
+	width: 40%;
+
+	nav {
+		display: flex;
+		justify-content: center;
+	}//this closes the nav
+}//this closes the footer

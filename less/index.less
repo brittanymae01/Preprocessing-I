@@ -64,13 +64,13 @@ html, body {
   }
 
 header {
-	border: 1px solid red;
+	// border: 1px solid red;
 	display: flex;
 	justify-content: space-between;
 	padding: 2%;
 
 	nav {
-		border: 1px solid red;
+		// border: 1px solid red;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
@@ -79,15 +79,23 @@ header {
 		a {
 			font-size: 1.8rem;
 			text-decoration: none;
+			color: black;
 		}//this closes my links
 	}//this closes my nav
 }//this closes my header
 
+.name {
+	font-size: 7rem;
+}
+
 h1 {
 	font-size: 4rem;
+	margin-top: 2%;
+	margin-bottom: 2%;
 }
 
 p {
+	line-height: 200%;
 	font-size: 2rem;
 }
 
@@ -122,22 +130,49 @@ button {
 
 .more-about-me {
 	display: flex;
+	margin-top: 10%;
+	margin-bottom: 10%;
 
 	.left-about-me {
-		width: 45%;
+		width: 40%;
 
 		.right-about-me {
-			width: 45%;
+			width: 40%;
+			
 		}//this closes right-about-me
 	}//this closes left-about-me
 }//this closes more-about-me
 
+ul {
+	font-size: 2rem;
+
+	li {
+		padding: 6%;
+		margin-left: 10%
+	}//this closes the li
+}//this closes the ul
+
+.footer {
+	display: flex;
+	justify-content: center;
+	margin-top: 5%;
+}
+
 footer {
 	background-color: grey;
-	width: 40%;
+	width: 60%;
+	padding: 2%;
+	
 
 	nav {
 		display: flex;
-		justify-content: center;
+		justify-content: space-around;
+		
+
+		a {
+			font-size: 1.8rem;
+			text-decoration: none;
+			color: black;
+		}//this closes the links
 	}//this closes the nav
 }//this closes the footer

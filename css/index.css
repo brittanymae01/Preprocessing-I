@@ -140,13 +140,11 @@ body {
   padding: 4%;
 }
 header {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   padding: 2%;
 }
 header nav {
-  border: 1px solid red;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -155,11 +153,18 @@ header nav {
 header nav a {
   font-size: 1.8rem;
   text-decoration: none;
+  color: black;
+}
+.name {
+  font-size: 7rem;
 }
 h1 {
   font-size: 4rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 p {
+  line-height: 200%;
   font-size: 2rem;
 }
 .top-section {
@@ -188,18 +193,38 @@ button {
 }
 .more-about-me {
   display: flex;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 .more-about-me .left-about-me {
-  width: 45%;
+  width: 40%;
 }
 .more-about-me .left-about-me .right-about-me {
-  width: 45%;
+  width: 40%;
+}
+ul {
+  font-size: 2rem;
+}
+ul li {
+  padding: 6%;
+  margin-left: 10%;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
 }
 footer {
   background-color: grey;
-  width: 40%;
+  width: 60%;
+  padding: 2%;
 }
 footer nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+}
+footer nav a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: black;
 }

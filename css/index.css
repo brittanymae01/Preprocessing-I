@@ -130,6 +130,13 @@ table {
 * {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('NanumGothic'), url(https://fonts.gstatic.com/s/nanumgothic/v17/PN_3Rfi-oW3hYwmKDpxS7F_D-djb.ttf) format('truetype');
+}
 html,
 body {
   font-family: 'Be Vietnam', sans-serif;
@@ -145,11 +152,25 @@ header {
   justify-content: space-between;
   padding: 2%;
 }
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+  }
+}
 header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 50%;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+    padding: 2%;
+  }
 }
 header nav a {
   font-size: 1.8rem;
@@ -196,10 +217,24 @@ button {
 .more-about-me {
   display: flex;
   margin-top: 10%;
-  margin-bottom: 10%;
+  margin-bottom: 7%;
+}
+@media (max-width: 500px) {
+  .more-about-me {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+  }
 }
 .more-about-me .left-about-me {
   width: 40%;
+}
+@media (max-width: 500px) {
+  .more-about-me .left-about-me {
+    width: 80%;
+    margin-bottom: 3rem;
+  }
 }
 .more-about-me .left-about-me .right-about-me {
   width: 40%;
@@ -211,10 +246,34 @@ ul li {
   padding: 6%;
   margin-left: 10%;
 }
+@media (max-width: 500px) {
+  ul li {
+    margin-left: 0;
+  }
+}
+@media (max-width: 500px) {
+  .work-history {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2% 0;
+}
+.contact-info h2 {
+  margin: 2% 0;
+}
+.contact-info div {
+  font-size: 1.5rem;
+  margin: 1% 0;
+}
 .footer {
   display: flex;
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 footer {
   background-color: pink;

@@ -53,6 +53,16 @@ table {
 	box-sizing: border-box;
 	}
 
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap');	
+
+@color: pink;
+@font: 'Nanum Gothic', sans-serif;
+.padding() {
+	padding: 2%;
+}
+
+
+
 html, body {
 	font-family: 'Be Vietnam', sans-serif;
 	font-size: 62.5%;
@@ -70,12 +80,24 @@ header {
 	justify-content: space-between;
 	padding: 2%;
 
+	@media(max-width: 500px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 2%;
+	}
+
 	nav {
 		// border: 1px solid red;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
 		width: 50%;
+
+		@media(max-width: 500px) {
+			width: 100%;
+			padding: 2%;
+		}
 
 		a {
 			font-size: 1.8rem;
@@ -95,17 +117,19 @@ h1 {
 	margin-bottom: 2%;
 }
 
-p {
+p  {
+	// font-family: @font;
 	line-height: 200%;
 	font-size: 2rem;
 	padding-top: 2%
 }
 
 .top-section {
-	background-color: pink;
+	background-color: @color;
 	padding: 2%;
+
 	img {
-width: 40%
+		width: 40%
 	}//this closes my image
 }//this closes my top-section
 
@@ -114,12 +138,12 @@ h2 {
 }
 
 .introduction {
-	padding: 2%
-}//this closes introduction
+	.padding();
+}
 
 .contact-info {
-	padding: 2%
-}//this closes the contact-info 
+	.padding();
+}
 
 button {
 	margin: 2% 0;
@@ -133,14 +157,25 @@ button {
 .more-about-me {
 	display: flex;
 	margin-top: 10%;
-	margin-bottom: 10%;
+	margin-bottom: 7%;
+
+	@media(max-width: 500px) {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 2%
+	}
 
 	.left-about-me {
 		width: 40%;
 
+		@media(max-width: 500px) {
+			width: 80%;
+			margin-bottom: 3rem;
+		}//this closes media query
+
 		.right-about-me {
 			width: 40%;
-			
 		}//this closes right-about-me
 	}//this closes left-about-me
 }//this closes more-about-me
@@ -150,18 +185,46 @@ ul {
 
 	li {
 		padding: 6%;
-		margin-left: 10%
+		margin-left: 10%;
+
+		@media (max-width: 500px){
+			margin-left: 0;
+		}//this closes media query
 	}//this closes the li
 }//this closes the ul
+
+@media(max-width: 500px){
+	.work-history {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+}
+
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2% 0;
+
+	h2 {
+		margin: 2% 0;
+
+	}//this closes h2
+	
+	div {
+		font-size: 1.5rem;
+		margin: 1% 0;
+	}//this closes the div
+}//this closes contact-info
 
 .footer {
 	display: flex;
 	justify-content: center;
-	margin-top: 5%;
+	margin-top: 3%;
 }
 
 footer {
-	background-color: pink;
+	background-color: @color;
 	width: 60%;
 	padding: 2%;
 	

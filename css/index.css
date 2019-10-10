@@ -149,8 +149,9 @@ body {
 }
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 2%;
+  margin-bottom: 2rem;
 }
 @media (max-width: 500px) {
   header {
@@ -185,10 +186,20 @@ h1 {
   margin-top: 2%;
   margin-bottom: 2%;
 }
+@media (max-width: 500px) {
+  h1 {
+    text-align: center;
+  }
+}
 p {
   line-height: 200%;
   font-size: 2rem;
   padding-top: 2%;
+}
+@media (max-width: 500px) {
+  p {
+    text-align: center;
+  }
 }
 .top-section {
   background-color: pink;
@@ -197,13 +208,23 @@ p {
 .top-section img {
   width: 40%;
 }
+@media (max-width: 500px) {
+  .top-section img {
+    display: block;
+    margin: 2rem auto;
+    width: 60%;
+  }
+}
 h2 {
   font-size: 3rem;
 }
-.introduction {
-  padding: 2%;
+@media (max-width: 500px) {
+  h2 {
+    text-align: center;
+    margin: 2.5rem 2rem 0;
+  }
 }
-.contact-info {
+.introduction {
   padding: 2%;
 }
 button {
@@ -213,6 +234,12 @@ button {
   padding: 1% 2%;
   border-radius: 8px;
   color: white;
+}
+@media (max-width: 500px) {
+  button {
+    display: block;
+    margin: 2rem auto;
+  }
 }
 .more-about-me {
   display: flex;
@@ -262,6 +289,7 @@ ul li {
   flex-direction: column;
   align-items: center;
   margin-top: 2% 0;
+  padding: 2%;
 }
 .contact-info h2 {
   margin: 2% 0;
@@ -275,16 +303,16 @@ ul li {
   justify-content: center;
   margin-top: 3%;
 }
-footer {
+.footer footer {
   background-color: pink;
   width: 60%;
   padding: 2%;
 }
-footer nav {
+.footer footer nav {
   display: flex;
   justify-content: space-around;
 }
-footer nav a {
+.footer footer nav a {
   font-size: 1.8rem;
   text-decoration: none;
   color: black;

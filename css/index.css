@@ -1,1 +1,319 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('NanumGothic'), url(https://fonts.gstatic.com/s/nanumgothic/v17/PN_3Rfi-oW3hYwmKDpxS7F_D-djb.ttf) format('truetype');
+}
+html,
+body {
+  font-family: 'Be Vietnam', sans-serif;
+  font-size: 62.5%;
+  height: 100%;
+}
+.container {
+  margin: 0 auto;
+  padding: 4%;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2%;
+  margin-bottom: 2rem;
+}
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+  }
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+    padding: 2%;
+  }
+}
+header nav a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: black;
+}
+.name {
+  font-size: 6rem;
+}
+h1 {
+  font-size: 4rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  h1 {
+    text-align: center;
+  }
+}
+p {
+  line-height: 200%;
+  font-size: 2rem;
+  padding-top: 2%;
+}
+@media (max-width: 500px) {
+  p {
+    text-align: center;
+  }
+}
+.top-section {
+  background-color: pink;
+  padding: 2%;
+}
+.top-section img {
+  width: 40%;
+}
+@media (max-width: 500px) {
+  .top-section img {
+    display: block;
+    margin: 2rem auto;
+    width: 60%;
+  }
+}
+h2 {
+  font-size: 3rem;
+}
+@media (max-width: 500px) {
+  h2 {
+    text-align: center;
+    margin: 2.5rem 2rem 0;
+  }
+}
+.introduction {
+  padding: 2%;
+}
+button {
+  margin: 2% 0;
+  font-size: 3rem;
+  background-color: palevioletred;
+  padding: 1% 2%;
+  border-radius: 8px;
+  color: white;
+}
+@media (max-width: 500px) {
+  button {
+    display: block;
+    margin: 2rem auto;
+  }
+}
+.more-about-me {
+  display: flex;
+  margin-top: 10%;
+  margin-bottom: 7%;
+}
+@media (max-width: 500px) {
+  .more-about-me {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2%;
+  }
+}
+.more-about-me .left-about-me {
+  width: 40%;
+}
+@media (max-width: 500px) {
+  .more-about-me .left-about-me {
+    width: 80%;
+    margin-bottom: 3rem;
+  }
+}
+.more-about-me .left-about-me .right-about-me {
+  width: 40%;
+}
+ul {
+  font-size: 2rem;
+}
+ul li {
+  padding: 6%;
+  margin-left: 10%;
+}
+@media (max-width: 500px) {
+  ul li {
+    margin-left: 0;
+  }
+}
+@media (max-width: 500px) {
+  .work-history {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2% 0;
+  padding: 2%;
+}
+.contact-info h2 {
+  margin: 2% 0;
+}
+.contact-info div {
+  font-size: 1.5rem;
+  margin: 1% 0;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+.footer footer {
+  background-color: pink;
+  width: 60%;
+  padding: 2%;
+}
+.footer footer nav {
+  display: flex;
+  justify-content: space-around;
+}
+.footer footer nav a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: black;
+}
